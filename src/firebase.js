@@ -4,14 +4,16 @@ import { getStorage } from 'firebase/storage'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+// const { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId } = process.env
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAnUfMrO4SEfcSKgjN3vyDT0yxmRaIPpZQ",
-    authDomain: "image-uploading-551ff.firebaseapp.com",
-    projectId: "image-uploading-551ff",
-    storageBucket: "image-uploading-551ff.appspot.com",
-    messagingSenderId: "707049067873",
-    appId: "1:707049067873:web:3703a5c992bc7688f96120"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
